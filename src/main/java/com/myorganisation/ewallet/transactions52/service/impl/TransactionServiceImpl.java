@@ -90,7 +90,7 @@ public class TransactionServiceImpl implements TransactionService {
             String body = builder.toString();
             builder = new StringBuilder();
             builder.append("Hi ");
-            builder.append(senderUserResponse.getUserName());
+            builder.append(receiverUserResponse.getUserName());
             builder.append(",\n");
             builder.append("your wallet has been credited with Rs. ");
             builder.append(transaction.getAmount());
